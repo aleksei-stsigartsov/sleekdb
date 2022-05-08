@@ -11,6 +11,10 @@ Brief presentation about SleekDB and also a quick tutorial on how to install, ru
    3. [Getting Started in 4 steps](#getting-started-in-4-steps)
 3. [Understanding the SleekDB basics](#understanding-the-sleekdb-basics)
    1. [Managing Store](#managing-store)
+   2. [Insert Data](#insert-data)
+   3. [Fetch Data](#fetch-data)
+   4. [Edit Data](#edit-data)
+   5. [Delete Data](#delete-data)
 
 ## What is SleekDB?
 __SleekDB - A NoSQL Database made using PHP.__ SleekDB is a simple flat file NoSQL like database implemented in PHP without any third-party dependencies that store data in plain JSON files.
@@ -56,9 +60,9 @@ Extension | Insctruction
 
 ### Getting Started in 4 steps
 - 1. To start see a results, create in your root directory `index.php` file
-- 2. Do a ✨Magic code✨ in `index.php` file.
-- 3. Run a Server, enter in terminal `php -S localhost:8000`
-- 4. Follow the link [`localhost:8000`](http://localhost:8000/)
+- 2. Write a ✨Magic code✨ in `index.php` file.
+- 3. Run a Server, enter in terminal <pre> php -S localhost:8000 </pre>
+- 4. Follow the link to see results [`localhost:8000`](http://localhost:8000/)
 
 ## Understanding the SleekDB basics
 
@@ -77,4 +81,26 @@ $todoStore = new Store('todos', $dataDir);</pre>
 - __Delete a store__
 <pre>$todoStore->deleteStore();</pre>
 
+### Insert Data
 
+- __Insert Data__
+<pre>use SleekDB\Store;
+$todoStore = new Store('todos', $dataDir);</pre>
+
+### Fetch Data
+
+- __Fetch Data__
+<pre>use SleekDB\Store;
+$todoStore = new Store('todos', $dataDir);</pre>
+
+### Edit Data
+
+- __Edit Data__
+<pre>use SleekDB\Store;
+$todoStore = new Store('todos', $dataDir);</pre>
+
+### Delete Data
+
+- __Delete Data__
+<pre>use SleekDB\Store;
+$todoStore = new Store('todos', $dataDir);</pre>
