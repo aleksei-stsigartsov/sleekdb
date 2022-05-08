@@ -79,7 +79,9 @@ Extension | Insctruction
 ### Managing Store
 
 - __Setting the store configuration__
-<pre>$storeConfiguration = [
+<pre>
+// it is optional
+$storeConfiguration = [
   "auto_cache" => true,
   "cache_lifetime" => null,
   "primary_key" => "_id",
