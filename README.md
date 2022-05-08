@@ -8,7 +8,7 @@ Brief presentation about SleekDB and also a quick tutorial on how to install, ru
 2. [Installation](#installation)
    1. [Requirements](#requirements)
    2. [Composer Installation](#composer-installation)
-   3. [Getting Started](#getting-started)
+   3. [Getting Started in 4 steps](#getting-started-in-4-steps)
 3. [Understanding the SleekDB basics](#understanding-the-sleekdb-basics)
    1. [Managing Store](#managing-store)
 
@@ -51,10 +51,10 @@ Extension | Insctruction
 `ext-mbstring` | unable in php.ini
 
 ### Composer Installation
- To install SleekDB using composer, open a terminal, cd into your project root directory and run this | `composer require rakibtg/sleekdb`
---- | ---
+ To install SleekDB using composer, open a terminal, cd into your project root directory and run this
+ <pre> composer require rakibtg/sleekdb`</pre>
 
-### Getting Started
+### Getting Started in 4 steps
 - 1. To start see a results, create in your root directory `index.php` file
 - 2. Do a ✨Magic code✨ in `index.php` file.
 - 3. Run a Server, enter in terminal `php -S localhost:8000`
@@ -64,6 +64,17 @@ Extension | Insctruction
 
 ### Managing Store
 
+- __Creating a store__
+<pre>use SleekDB\Store;
+$todoStore = new Store('todos', $dataDir);</pre>
 
+- __Insert a new todo in store__
+<pre>$todoStore->insert([
+  'description' => 'todo example',
+  'status' => 'active'
+]);</pre>
+
+- __Delete a store__
+<pre>$todoStore->deleteStore();</pre>
 
 
