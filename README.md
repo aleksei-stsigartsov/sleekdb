@@ -191,4 +191,4 @@ echo json_encode($allTodos);
 </pre>
 
 # THX 4 ATTENTION
-<img src="https://user-images.githubusercontent.com/91482489/167309473-5ee69994-8023-47e1-9f1a-8fb4b712b8e3.png" width="300" height="300"></img>
+<img src="https://media0.giphy.com/media/3o7TKC2GLMWQC7PqiA/giphy.gif?cid=ecf05e47aajji9v4u7x63vlwhxj96t2wn6bnloce90hvuarm&rid=giphy.gif&ct=g" width="800" height="300"></img>
