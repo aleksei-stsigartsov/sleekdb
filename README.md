@@ -2,7 +2,7 @@
 Brief presentation about SleekDB and also a quick tutorial on how to install, run and use it.
 
 ## Table of contents:
-1. [What is Elasticsearch?](#what-is-elasticsearch)
+1. [What is SleekDB?](#what-is-sleekdb)
    1. [Features](#features-of-elastic-search)
    2. [Advantages](#advantages-of-elasticsearch)
    3. [Key terms](#key-terms-used-in-elasticsearch)
@@ -27,7 +27,7 @@ Brief presentation about SleekDB and also a quick tutorial on how to install, ru
 6. [Understanding the Elasricsearch Rest basics](#understanding-the-elasricsearch-rest-basics)
    1. [Get CAT APIs](#get-cat-apis)
 
-## What is Elasticsearch?
+## What is SleekDB?
 __Elasticsearch is a NoSQL database.__ It is based on Lucene search engine, and it is built with RESTful APIS. It offers simple deployment, maximum reliability, and easy management. It also offers advanced queries to perform detail analysis and stores all the data centrally. __It is helpful for executing a quick search of the documents.__
 
 Elasticsearch also allows you to store, search and analyze big volume of data. __It is mostly used as the underlying engine to powers applications that completed search requirements.__ It has been adopted in search engine platforms for modern web and mobile applications. Apart from a quick search, the tool also offers complex analytics and many advanced features.
