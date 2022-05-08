@@ -58,7 +58,7 @@ Extension | Insctruction
 - 1. To start see a results, create in your root directory `index.php` file
 - 2. Do a ✨Magic code✨ in `index.php` file.
 - 3. Run a Server, enter in terminal `php -S localhost:8000`
-- 4. Follow the link [`localhost:8000`](//localhost:8000)</a>
+- 4. Follow the link [`localhost:8000`](http://localhost:8000/)
 
 ## Understanding the SleekDB basics
 
