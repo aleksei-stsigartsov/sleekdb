@@ -52,7 +52,7 @@ Extension | Insctruction
 
 ### Composer Installation
  To install SleekDB using composer, open a terminal, cd into your project root directory and run this
- <pre> composer require rakibtg/sleekdb`</pre>
+ <pre> composer require rakibtg/sleekdb</pre>
 
 ### Getting Started in 4 steps
 - 1. To start see a results, create in your root directory `index.php` file
