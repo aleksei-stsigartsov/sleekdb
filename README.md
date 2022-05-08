@@ -62,7 +62,7 @@ Extension | Insctruction
 - 1. To start, create in your root directory `index.php` file
 - 2. Write a ✨Magic code✨ in `index.php` file.
 - 3. Run a Server, enter in terminal <pre> php -S localhost:8000 </pre>
-- 4. Follow the link to see results [`localhost:8000`](http://localhost:8000/)
+- 4. Follow the link to see a results [`localhost:8000`](http://localhost:8000/)
 
 ## Understanding the SleekDB basics
 
