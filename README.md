@@ -4,7 +4,7 @@ Brief presentation about SleekDB and also a quick tutorial on how to install, ru
 ## Table of contents:
 1. [What is SleekDB?](#what-is-sleekdb)
    1. [Features and Advantages](#features-and-advantages)
-   2. [Key terms](#key-terms-used-in-sleekdb)
+   2. [Query Life Cycle in SleekDB](#query-life-cycle-in-sleekdb)
 2. [Installation](#installation)
    1. [Requirements](#requirements)
    2. [Composer Installation](#composer-installation)
@@ -37,7 +37,7 @@ It is not designed to handle heavy-load IO operations, it is designed to have a 
 - __💌 Actively maintained.__
 
  
-### Key terms used in SleekDB
+### Query Life Cycle in SleekDB
 Term | Query Life Cycle
 --- | ---
 `1. Store` | The Store class is the first, and in most cases also the only part you need to come in contact with.
