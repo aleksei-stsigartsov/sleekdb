@@ -25,25 +25,25 @@ It is not comparable with databases like Sqlite, MySQL, PostgreSQL and MariaDB b
 It is not designed to handle heavy-load IO operations, it is designed to have a simple solution where all we need a database for is managing a few gigabytes of data. You can think of it as a database for low to medium operation loads.
 
 ### Features and Advantages
-- __⚡ Lightweight & Fast.__ 
+- __⚡ Lightweight & Fast.__ <br>
 Stores data in plain-text utilizing JSON format, no binary conversion needed to store or fetch the data. Default query cache layer.
-- __🔆 Schema free data storage.__
+- __🔆 Schema free data storage.__ <br>
 SleekDB does not require any schema, so you can insert any types of data you want.
-- __🔍 Query on nested properties.__ 
+- __🔍 Query on nested properties.__ <br>
 As it supports schema free data, so you can filter and use conditions on nested properties of the JSON documents!
-- __✨ Dependency free, only needs PHP to run.__
+- __✨ Dependency free, only needs PHP to run.__ <br>
 Supports PHP 7+. Requires no third-party plugins or software.
-- __🚀 Default caching layer.__
+- __🚀 Default caching layer.__ <br>
 SleekDB will serve data from cache by default and regenerate cache automatically! Query results will be cached and later reused from a single file instead of traversing all the available files.
-- __🌈 Rich Conditions and Filters.__
+- __🌈 Rich Conditions and Filters.__ <br>
 Use multiple conditional comparisons, text search, sorting on multiple properties and nested properties.
-- __👍 Process data on demand.__
+- __👍 Process data on demand.__ <br>
 SleekDB does not require any background process or network protocol in order to process data when you use it in a PHP project. All data for a query will be fetched at runtime within the same PHP process.
-- __💩 Runs everywhere.__
+- __💩 Runs everywhere.__ <br>
 Runs perfectly on shared-servers or VPS too.
-- __🍰 Easy to learn and implement.__
+- __🍰 Easy to learn and implement.__ <br>
 SleekDB provides a very simple elegant API to handle all of your data.
-- __💌 Actively maintained.__
+- __💌 Actively maintained.__ <br>
 
  
 ### Query Life Cycle in SleekDB
