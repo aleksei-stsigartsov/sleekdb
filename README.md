@@ -68,9 +68,26 @@ Extension | Insctruction
 
 ### Managing Store
 
+- __Setting the store configuration__
+$storeConfiguration = [
+  "auto_cache" => true,
+  "cache_lifetime" => null,
+  "primary_key" => "_id",
+  "search" => [
+    "min_length" => 2,
+    "mode" => "or",
+    "score_key" => "scoreKey",
+    "algorithm" => Query::SEARCH_ALGORITHM["hits"]
+  ]
+];
+
 - __Creating a store__
+
 <pre>use SleekDB\Store;
-$todoStore = new Store('todos', $dataDir);</pre>
+use SleekDB\Query;
+$databaseDirectory = __DIR__."/database";
+
+$todoStore = new Store('todos', $databaseDirectory,$storeConfiguration);</pre>
 
 - __Insert a new todo in store__
 <pre>$todoStore->insert([
@@ -78,29 +95,96 @@ $todoStore = new Store('todos', $dataDir);</pre>
   'status' => 'active'
 ]);</pre>
 
+- __Show the content of $todoStore__
+<pre>$allTodos = $todoStore->findAll();
+//let see all todos we have
+echo json_encode($allTodos);</pre>
+
 - __Delete a store__
 <pre>$todoStore->deleteStore();</pre>
 
 ### Insert Data
 
-- __Insert Data__
-<pre>use SleekDB\Store;
-$todoStore = new Store('todos', $dataDir);</pre>
+- __insert__
+<pre>// Prepare a PHP array to insert.
+$todo = [
+    'description' => 'show how insert query works',
+    'status' => 'done'
+];
+// Insert the data.
+$todo = $todoStore->insert($todo);</pre>
+
+- __insertMany__
+<pre>// Prepare a PHP array to insert.
+$todo = [ 
+         [
+           'description' => 'show how insertMany query works (part1)',
+           'status' => 'active'
+         ],
+         [
+           'description' => 'show how insertMany query works (part2)',
+           'status' => 'done'
+         ]  
+        ];
+// Insert the data.
+$todo = $todoStore->insertMany($todo);</pre>
 
 ### Fetch Data
 
-- __Fetch Data__
-<pre>use SleekDB\Store;
-$todoStore = new Store('todos', $dataDir);</pre>
+- __findAll__
+<pre>
+$allTodos = $todoStore->findAll();
+echo json_encode($allTodos);
+</pre>
+
+- __findBy__
+<pre>
+$todosBy = $todoStore->findBy(["description", "=", "active"]);
+echo json_encode($todosBy);
+</pre>
+
+- __findById__
+<pre>
+$todosById = $todoStore->findById(1);
+echo json_encode($todosById);
+</pre>
 
 ### Edit Data
 
-- __Edit Data__
-<pre>use SleekDB\Store;
-$todoStore = new Store('todos', $dataDir);</pre>
+- __update__
+<pre>$todoUpdate = [
+    'description' => 'Read this sentence to the end',
+    'status' => 'active'
+];
+//store the todo
+$todoStore->insert($todoUpdate);
+// retrieve a todo
+$todoUpdate = $userStore->findBy(['description', '=', 'show how insertMany query works (part1)']);
+// update todo
+$todoUpdate["status"] = "done";
+// updates the todo by using his _id
+$todoStore->update( $todoUpdate ); </pre>
+
+- __updateById__
+<pre>$todoStore->updateById(1, [ 'description' => 'finish the presentation', 'status' => 'active']);
+// lets take a look on a result
+$todosById = $todoStore->findById(1);
+echo json_encode($todosById);
+</pre>
 
 ### Delete Data
 
-- __Delete Data__
-<pre>use SleekDB\Store;
-$todoStore = new Store('todos', $dataDir);</pre>
+- __deleteBy__
+<pre>$userStore->deleteBy(["status", "=", "done"]);
+// lets see that all todos with done status was removed
+$allTodos = $todoStore->findAll();
+echo json_encode($allTodos);
+</pre>
+
+- __deleteById__
+// now lets finish the presentation 
+<pre>$userStore->deleteById(1);
+
+$allTodos = $todoStore->findAll();
+echo json_encode($allTodos);
+</pre>
