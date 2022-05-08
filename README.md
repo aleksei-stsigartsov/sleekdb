@@ -59,7 +59,7 @@ Extension | Insctruction
  <pre> composer require rakibtg/sleekdb</pre>
 
 ### Getting Started in 4 steps
-- 1. To start see a results, create in your root directory `index.php` file
+- 1. To start, create in your root directory `index.php` file
 - 2. Write a ✨Magic code✨ in `index.php` file.
 - 3. Run a Server, enter in terminal <pre> php -S localhost:8000 </pre>
 - 4. Follow the link to see results [`localhost:8000`](http://localhost:8000/)
