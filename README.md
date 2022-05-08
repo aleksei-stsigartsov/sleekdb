@@ -15,6 +15,7 @@ Brief presentation about SleekDB and also a quick tutorial on how to install, ru
    3. [Fetch Data](#fetch-data)
    4. [Edit Data](#edit-data)
    5. [Delete Data](#delete-data)
+4. [THX 4 ATTENTION](#thx-4-attention)
 
 ## What is SleekDB?
 __SleekDB - A NoSQL Database made using PHP.__ SleekDB is a simple flat file NoSQL like database implemented in PHP without any third-party dependencies that store data in plain JSON files.
@@ -188,3 +189,6 @@ echo json_encode($allTodos);
 $allTodos = $todoStore->findAll();
 echo json_encode($allTodos);
 </pre>
+
+# THX 4 ATTENTION
+
