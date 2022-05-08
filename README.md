@@ -70,7 +70,7 @@ Extension | Insctruction
 ### Managing Store
 
 - __Setting the store configuration__
-$storeConfiguration = [
+<pre>$storeConfiguration = [
   "auto_cache" => true,
   "cache_lifetime" => null,
   "primary_key" => "_id",
@@ -80,7 +80,7 @@ $storeConfiguration = [
     "score_key" => "scoreKey",
     "algorithm" => Query::SEARCH_ALGORITHM["hits"]
   ]
-];
+];</pre>
 
 - __Creating a store__
 
